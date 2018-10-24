@@ -4,5 +4,5 @@ export interface Exercise {
     duration: number;
     calories: number;
     date?: Date;
-    state?: 'complete' | 'closed' | null;
+    state?: 'completed' | 'closed' | null;
 }
