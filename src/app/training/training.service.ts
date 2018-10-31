@@ -21,7 +21,9 @@ export class TrainingService {
                 this.availableExercises = docArr.map(doc => {
                     return {
                         id: doc.payload.doc.id,
-                        ...doc.payload.doc.data()
+                        name: doc.payload.doc.data()['name'],
+                        duration: doc.payload.doc.data()['duration'],
+                        calories: doc.payload.doc.data()['calories']
                     };
                 });
                 this.exercisesChanged.next(this.availableExercises.slice());
