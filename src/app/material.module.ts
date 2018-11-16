@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {
     MatButtonModule,
     MatIconModule,
@@ -38,7 +39,8 @@ const modules = [
     MatDialogModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSnackBarModule
 ];
 
 @NgModule({
